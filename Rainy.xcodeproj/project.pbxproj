@@ -14,6 +14,9 @@
 		972C4AF81A6D9237004AD004 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972C4AF71A6D9237004AD004 /* Images.xcassets */; };
 		972C4AFB1A6D9237004AD004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972C4AF91A6D9237004AD004 /* LaunchScreen.xib */; };
 		972C4B071A6D9237004AD004 /* RainyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 972C4B061A6D9237004AD004 /* RainyTests.m */; };
+		972C4B121A6D93C4004AD004 /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972C4B111A6D93C4004AD004 /* WeatherKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		972C4B151A6D9424004AD004 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 972C4B141A6D9424004AD004 /* BackgroundView.m */; };
+		972C4B181A6D960D004AD004 /* Currently.m in Sources */ = {isa = PBXBuildFile; fileRef = 972C4B171A6D960D004AD004 /* Currently.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		972C4B001A6D9237004AD004 /* RainyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972C4B051A6D9237004AD004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		972C4B061A6D9237004AD004 /* RainyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainyTests.m; sourceTree = "<group>"; };
+		972C4B111A6D93C4004AD004 /* WeatherKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WeatherKit.framework; sourceTree = "<group>"; };
+		972C4B131A6D9424004AD004 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		972C4B141A6D9424004AD004 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		972C4B161A6D960D004AD004 /* Currently.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currently.h; sourceTree = "<group>"; };
+		972C4B171A6D960D004AD004 /* Currently.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currently.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972C4B121A6D93C4004AD004 /* WeatherKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 				972C4AE91A6D9237004AD004 /* Rainy */,
 				972C4B031A6D9237004AD004 /* RainyTests */,
 				972C4AE81A6D9237004AD004 /* Products */,
+				972C4B101A6D93B1004AD004 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +95,10 @@
 				972C4AEF1A6D9237004AD004 /* AppDelegate.m */,
 				972C4AF11A6D9237004AD004 /* ViewController.h */,
 				972C4AF21A6D9237004AD004 /* ViewController.m */,
+				972C4B131A6D9424004AD004 /* BackgroundView.h */,
+				972C4B141A6D9424004AD004 /* BackgroundView.m */,
+				972C4B161A6D960D004AD004 /* Currently.h */,
+				972C4B171A6D960D004AD004 /* Currently.m */,
 				972C4AF41A6D9237004AD004 /* Main.storyboard */,
 				972C4AF71A6D9237004AD004 /* Images.xcassets */,
 				972C4AF91A6D9237004AD004 /* LaunchScreen.xib */,
@@ -117,6 +131,14 @@
 				972C4B051A6D9237004AD004 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		972C4B101A6D93B1004AD004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972C4B111A6D93C4004AD004 /* WeatherKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972C4B181A6D960D004AD004 /* Currently.m in Sources */,
 				972C4AF31A6D9237004AD004 /* ViewController.m in Sources */,
 				972C4AF01A6D9237004AD004 /* AppDelegate.m in Sources */,
+				972C4B151A6D9424004AD004 /* BackgroundView.m in Sources */,
 				972C4AED1A6D9237004AD004 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Rainy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Rainy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,8 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@class Currently;
+@class Forecaster;
+
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
+
+//Outlets
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *weatherIcon;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
+
+
+//Properties
+@property (strong, nonatomic) Forecaster *forecaster;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) Currently *currently;
+
 
 
 @end

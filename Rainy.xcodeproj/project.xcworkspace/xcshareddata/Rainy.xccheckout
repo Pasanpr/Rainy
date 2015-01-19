@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5D9090B1-BE73-45D2-B8C8-72DE0B714786</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rainy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D58B6B6D5CD545235B97BFA471798AEA9F0D813E</key>
+		<string>https://github.com/Pasanpr/Rainy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Rainy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D58B6B6D5CD545235B97BFA471798AEA9F0D813E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Pasanpr/Rainy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D58B6B6D5CD545235B97BFA471798AEA9F0D813E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D58B6B6D5CD545235B97BFA471798AEA9F0D813E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Rainy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
