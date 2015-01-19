@@ -10,7 +10,7 @@
 #import "Currently.h"
 #import <WeatherKit/Forecaster.h>
 
-NSString *const kForecastApiKey = @"e7d8d21f3e7c1c515d68fba89aa058ba";
+NSString *const kForecastApiKey = @"/*Enter your API Key*/";
 
 @interface ViewController () {
     CLGeocoder *_geoCoder;
