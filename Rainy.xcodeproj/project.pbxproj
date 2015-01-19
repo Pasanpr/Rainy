@@ -17,6 +17,11 @@
 		972C4B121A6D93C4004AD004 /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972C4B111A6D93C4004AD004 /* WeatherKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		972C4B151A6D9424004AD004 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 972C4B141A6D9424004AD004 /* BackgroundView.m */; };
 		972C4B181A6D960D004AD004 /* Currently.m in Sources */ = {isa = PBXBuildFile; fileRef = 972C4B171A6D960D004AD004 /* Currently.m */; };
+		972C4B1F1A6D9AB3004AD004 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972C4B1E1A6D9AB3004AD004 /* NotificationCenter.framework */; };
+		972C4B251A6D9AB3004AD004 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972C4B241A6D9AB3004AD004 /* TodayViewController.m */; };
+		972C4B271A6D9AB3004AD004 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972C4B261A6D9AB3004AD004 /* MainInterface.storyboard */; };
+		972C4B2A1A6D9AB3004AD004 /* RainyToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 972C4B1D1A6D9AB3004AD004 /* RainyToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		972C4B2F1A6DA151004AD004 /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972C4B111A6D93C4004AD004 /* WeatherKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +32,28 @@
 			remoteGlobalIDString = 972C4AE61A6D9237004AD004;
 			remoteInfo = Rainy;
 		};
+		972C4B281A6D9AB3004AD004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 972C4ADF1A6D9237004AD004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 972C4B1C1A6D9AB3004AD004;
+			remoteInfo = RainyToday;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		972C4B2E1A6D9AB3004AD004 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				972C4B2A1A6D9AB3004AD004 /* RainyToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		972C4AE71A6D9237004AD004 /* Rainy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +74,12 @@
 		972C4B141A6D9424004AD004 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
 		972C4B161A6D960D004AD004 /* Currently.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currently.h; sourceTree = "<group>"; };
 		972C4B171A6D960D004AD004 /* Currently.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currently.m; sourceTree = "<group>"; };
+		972C4B1D1A6D9AB3004AD004 /* RainyToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RainyToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		972C4B1E1A6D9AB3004AD004 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		972C4B221A6D9AB3004AD004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		972C4B231A6D9AB3004AD004 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		972C4B241A6D9AB3004AD004 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		972C4B261A6D9AB3004AD004 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +98,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		972C4B1A1A6D9AB3004AD004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972C4B1F1A6D9AB3004AD004 /* NotificationCenter.framework in Frameworks */,
+				972C4B2F1A6DA151004AD004 /* WeatherKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +115,7 @@
 			children = (
 				972C4AE91A6D9237004AD004 /* Rainy */,
 				972C4B031A6D9237004AD004 /* RainyTests */,
+				972C4B201A6D9AB3004AD004 /* RainyToday */,
 				972C4AE81A6D9237004AD004 /* Products */,
 				972C4B101A6D93B1004AD004 /* Frameworks */,
 			);
@@ -84,6 +126,7 @@
 			children = (
 				972C4AE71A6D9237004AD004 /* Rainy.app */,
 				972C4B001A6D9237004AD004 /* RainyTests.xctest */,
+				972C4B1D1A6D9AB3004AD004 /* RainyToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,8 +180,28 @@
 			isa = PBXGroup;
 			children = (
 				972C4B111A6D93C4004AD004 /* WeatherKit.framework */,
+				972C4B1E1A6D9AB3004AD004 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		972C4B201A6D9AB3004AD004 /* RainyToday */ = {
+			isa = PBXGroup;
+			children = (
+				972C4B231A6D9AB3004AD004 /* TodayViewController.h */,
+				972C4B241A6D9AB3004AD004 /* TodayViewController.m */,
+				972C4B261A6D9AB3004AD004 /* MainInterface.storyboard */,
+				972C4B211A6D9AB3004AD004 /* Supporting Files */,
+			);
+			path = RainyToday;
+			sourceTree = "<group>";
+		};
+		972C4B211A6D9AB3004AD004 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				972C4B221A6D9AB3004AD004 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +214,12 @@
 				972C4AE31A6D9237004AD004 /* Sources */,
 				972C4AE41A6D9237004AD004 /* Frameworks */,
 				972C4AE51A6D9237004AD004 /* Resources */,
+				972C4B2E1A6D9AB3004AD004 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				972C4B291A6D9AB3004AD004 /* PBXTargetDependency */,
 			);
 			name = Rainy;
 			productName = Rainy;
@@ -179,6 +244,23 @@
 			productReference = 972C4B001A6D9237004AD004 /* RainyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		972C4B1C1A6D9AB3004AD004 /* RainyToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 972C4B2B1A6D9AB3004AD004 /* Build configuration list for PBXNativeTarget "RainyToday" */;
+			buildPhases = (
+				972C4B191A6D9AB3004AD004 /* Sources */,
+				972C4B1A1A6D9AB3004AD004 /* Frameworks */,
+				972C4B1B1A6D9AB3004AD004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainyToday;
+			productName = RainyToday;
+			productReference = 972C4B1D1A6D9AB3004AD004 /* RainyToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +276,9 @@
 					972C4AFF1A6D9237004AD004 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 972C4AE61A6D9237004AD004;
+					};
+					972C4B1C1A6D9AB3004AD004 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -212,6 +297,7 @@
 			targets = (
 				972C4AE61A6D9237004AD004 /* Rainy */,
 				972C4AFF1A6D9237004AD004 /* RainyTests */,
+				972C4B1C1A6D9AB3004AD004 /* RainyToday */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +317,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		972C4B1B1A6D9AB3004AD004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972C4B271A6D9AB3004AD004 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		972C4B191A6D9AB3004AD004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972C4B251A6D9AB3004AD004 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -264,6 +366,11 @@
 			isa = PBXTargetDependency;
 			target = 972C4AE61A6D9237004AD004 /* Rainy */;
 			targetProxy = 972C4B011A6D9237004AD004 /* PBXContainerItemProxy */;
+		};
+		972C4B291A6D9AB3004AD004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 972C4B1C1A6D9AB3004AD004 /* RainyToday */;
+			targetProxy = 972C4B281A6D9AB3004AD004 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +532,38 @@
 			};
 			name = Release;
 		};
+		972C4B2C1A6D9AB3004AD004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RainyToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		972C4B2D1A6D9AB3004AD004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = RainyToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +589,14 @@
 			buildConfigurations = (
 				972C4B0E1A6D9237004AD004 /* Debug */,
 				972C4B0F1A6D9237004AD004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		972C4B2B1A6D9AB3004AD004 /* Build configuration list for PBXNativeTarget "RainyToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				972C4B2C1A6D9AB3004AD004 /* Debug */,
+				972C4B2D1A6D9AB3004AD004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RainyToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>972C4AFF1A6D9237004AD004</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>972C4B1C1A6D9AB3004AD004</key>
 		<dict>
 			<key>primary</key>
 			<true/>
